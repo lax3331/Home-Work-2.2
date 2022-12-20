@@ -33,16 +33,18 @@ class ViewController: UIViewController {
 
     @IBAction func redSliderAction(_ sender: Any) {
         redLabel.text = "Red: \(String(Int(redSlider.value)))"
+        mainView.backgroundColor = UIColor(red: CGFloat(redSlider.value/255), green: CGFloat(greenSlider.value/255), blue: CGFloat(blueSlider.value/255), alpha: 1)
     }
     
     @IBAction func greenSliderAction(_ sender: Any) {
         greenLabel.text = "Green: \(String(Int(greenSlider.value)))"
+        mainView.backgroundColor = UIColor(red: CGFloat(redSlider.value/255), green: CGFloat(greenSlider.value/255), blue: CGFloat(blueSlider.value/255), alpha: 1)
     }
     
     @IBAction func blueSliderAction(_ sender: Any) {
         blueLabel.text = "Blue: \(String(Int(blueSlider.value)))"
+        mainView.backgroundColor = UIColor(red: CGFloat(redSlider.value/255), green: CGFloat(greenSlider.value/255), blue: CGFloat(blueSlider.value/255), alpha: 1)
     }
-    
     
 }
 

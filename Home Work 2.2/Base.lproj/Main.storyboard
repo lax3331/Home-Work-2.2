@@ -30,22 +30,22 @@
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="42" id="GpF-UF-36T"/>
                                     <constraint firstAttribute="height" constant="30" id="kcb-bJ-WFW"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Green:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XiK-vL-Vlq">
-                                <rect key="frame" x="25" y="329" width="51" height="30"/>
+                                <rect key="frame" x="25" y="329" width="42" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="42" id="Viz-r2-4qL"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="cr6-iH-lUg"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="bhT-rE-DDc">
-                                <rect key="frame" x="120" y="277" width="249" height="31"/>
+                                <rect key="frame" x="111" y="277" width="258" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="waY-nF-nas"/>
                                 </constraints>
@@ -53,23 +53,23 @@
                                     <action selector="redSliderAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="FY6-b0-ry9"/>
                                 </connections>
                             </slider>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="XDD-Ss-Kmo">
-                                <rect key="frame" x="120" y="329" width="249" height="31"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="9Oz-du-hId"/>
-                                    <constraint firstAttribute="width" constant="245" id="FIi-JL-oX4"/>
-                                </constraints>
-                                <connections>
-                                    <action selector="greenSliderAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="aWk-Lz-tbc"/>
-                                </connections>
-                            </slider>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="cNC-k8-9Ou">
-                                <rect key="frame" x="120" y="379" width="249" height="31"/>
+                                <rect key="frame" x="111" y="379" width="258" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="hDD-bb-kbh"/>
                                 </constraints>
                                 <connections>
                                     <action selector="blueSliderAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="ybw-2F-qz4"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="Lj8-76-QjM">
+                                <rect key="frame" x="111" y="329" width="258" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="xxU-zq-Dv1"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="greenSliderAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="lob-uN-9Aq"/>
+                                    <action selector="redSliderAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="QBe-ek-Wed"/>
                                 </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Blue:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uRd-IX-L5O">
@@ -78,7 +78,7 @@
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="42" id="KbI-Sf-GU5"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="vfi-6j-Oh5"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -88,24 +88,26 @@
                         <constraints>
                             <constraint firstItem="weL-SW-fBN" firstAttribute="top" secondItem="Msf-IO-3QI" secondAttribute="top" constant="30" id="1rz-V6-4rM"/>
                             <constraint firstItem="cNC-k8-9Ou" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="uRd-IX-L5O" secondAttribute="trailing" constant="8" symbolic="YES" id="2tD-8O-GsZ"/>
+                            <constraint firstItem="Lj8-76-QjM" firstAttribute="trailing" secondItem="bhT-rE-DDc" secondAttribute="trailing" id="55a-YN-PQg"/>
                             <constraint firstItem="8om-pX-2fv" firstAttribute="top" secondItem="weL-SW-fBN" secondAttribute="bottom" constant="22" id="5F1-eR-1d3"/>
-                            <constraint firstItem="XDD-Ss-Kmo" firstAttribute="trailing" secondItem="cNC-k8-9Ou" secondAttribute="trailing" id="7S3-1a-1Y0"/>
+                            <constraint firstItem="cNC-k8-9Ou" firstAttribute="top" secondItem="Lj8-76-QjM" secondAttribute="bottom" constant="20" id="6wZ-Hd-Cce"/>
                             <constraint firstItem="XiK-vL-Vlq" firstAttribute="top" secondItem="8om-pX-2fv" secondAttribute="bottom" constant="22" id="9aB-Xr-pcN"/>
-                            <constraint firstItem="XDD-Ss-Kmo" firstAttribute="leading" secondItem="cNC-k8-9Ou" secondAttribute="leading" id="GVS-B0-y4a"/>
-                            <constraint firstItem="Msf-IO-3QI" firstAttribute="trailing" secondItem="XDD-Ss-Kmo" secondAttribute="trailing" constant="26" id="MBl-vL-uwi"/>
+                            <constraint firstItem="Lj8-76-QjM" firstAttribute="leading" secondItem="cNC-k8-9Ou" secondAttribute="leading" id="BTX-pc-Kbm"/>
+                            <constraint firstItem="Lj8-76-QjM" firstAttribute="top" secondItem="XiK-vL-Vlq" secondAttribute="top" id="KFj-Dc-gRv"/>
                             <constraint firstItem="8om-pX-2fv" firstAttribute="leading" secondItem="Msf-IO-3QI" secondAttribute="leading" constant="25" id="Mcc-Bs-w6g"/>
                             <constraint firstItem="uRd-IX-L5O" firstAttribute="leading" secondItem="Msf-IO-3QI" secondAttribute="leading" constant="25" id="Op7-UN-7Ob"/>
-                            <constraint firstItem="cNC-k8-9Ou" firstAttribute="top" secondItem="XDD-Ss-Kmo" secondAttribute="bottom" constant="20" id="Z8H-zV-NrX"/>
+                            <constraint firstItem="Lj8-76-QjM" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="XiK-vL-Vlq" secondAttribute="trailing" constant="46" id="Wfq-9I-gUX"/>
+                            <constraint firstItem="Lj8-76-QjM" firstAttribute="leading" secondItem="XiK-vL-Vlq" secondAttribute="trailing" constant="46" id="XdF-Sv-Huu"/>
                             <constraint firstItem="weL-SW-fBN" firstAttribute="centerX" secondItem="ZHK-KE-91P" secondAttribute="centerX" id="Zl7-zx-5cV"/>
                             <constraint firstItem="Msf-IO-3QI" firstAttribute="trailing" secondItem="weL-SW-fBN" secondAttribute="trailing" constant="16" id="bDe-eu-PGV"/>
-                            <constraint firstItem="XDD-Ss-Kmo" firstAttribute="leading" secondItem="bhT-rE-DDc" secondAttribute="leading" id="cb4-md-Afc"/>
+                            <constraint firstItem="XiK-vL-Vlq" firstAttribute="centerY" secondItem="Lj8-76-QjM" secondAttribute="centerY" id="dNQ-zb-7xu"/>
                             <constraint firstItem="uRd-IX-L5O" firstAttribute="top" secondItem="XiK-vL-Vlq" secondAttribute="bottom" constant="22" id="dda-vQ-F39"/>
-                            <constraint firstItem="XDD-Ss-Kmo" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="XiK-vL-Vlq" secondAttribute="trailing" constant="8" symbolic="YES" id="npN-Sv-dCV"/>
-                            <constraint firstItem="XDD-Ss-Kmo" firstAttribute="trailing" secondItem="bhT-rE-DDc" secondAttribute="trailing" id="oPN-eF-OV3"/>
-                            <constraint firstItem="XDD-Ss-Kmo" firstAttribute="top" secondItem="bhT-rE-DDc" secondAttribute="bottom" constant="22" id="oag-7m-iJb"/>
+                            <constraint firstItem="Msf-IO-3QI" firstAttribute="trailing" secondItem="Lj8-76-QjM" secondAttribute="trailing" constant="26" id="feK-fT-SM1"/>
+                            <constraint firstItem="Lj8-76-QjM" firstAttribute="leading" secondItem="bhT-rE-DDc" secondAttribute="leading" id="jeA-if-2se"/>
                             <constraint firstItem="weL-SW-fBN" firstAttribute="leading" secondItem="Msf-IO-3QI" secondAttribute="leading" constant="16" id="s5s-tL-Sjw"/>
                             <constraint firstItem="bhT-rE-DDc" firstAttribute="top" secondItem="weL-SW-fBN" secondAttribute="bottom" constant="22" id="tdD-CO-JQf"/>
                             <constraint firstItem="bhT-rE-DDc" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8om-pX-2fv" secondAttribute="trailing" constant="8" symbolic="YES" id="uhL-Yt-4V6"/>
+                            <constraint firstItem="Lj8-76-QjM" firstAttribute="trailing" secondItem="cNC-k8-9Ou" secondAttribute="trailing" id="vtZ-Va-6A0"/>
                             <constraint firstItem="XiK-vL-Vlq" firstAttribute="leading" secondItem="Msf-IO-3QI" secondAttribute="leading" constant="25" id="xeg-xu-IhO"/>
                         </constraints>
                     </view>
@@ -113,7 +115,7 @@
                         <outlet property="blueLabel" destination="uRd-IX-L5O" id="ZGJ-x9-CaE"/>
                         <outlet property="blueSlider" destination="cNC-k8-9Ou" id="AlX-VC-koD"/>
                         <outlet property="greenLabel" destination="XiK-vL-Vlq" id="dMP-DL-vrA"/>
-                        <outlet property="greenSlider" destination="cNC-k8-9Ou" id="UDe-LI-ebr"/>
+                        <outlet property="greenSlider" destination="Lj8-76-QjM" id="8l9-Da-RtL"/>
                         <outlet property="mainView" destination="weL-SW-fBN" id="h8m-af-e7u"/>
                         <outlet property="redLabel" destination="8om-pX-2fv" id="O78-hN-M2f"/>
                         <outlet property="redSlider" destination="bhT-rE-DDc" id="hO1-IC-d3s"/>
