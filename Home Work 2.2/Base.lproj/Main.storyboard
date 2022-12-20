@@ -49,6 +49,9 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="waY-nF-nas"/>
                                 </constraints>
+                                <connections>
+                                    <action selector="redSliderAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="FY6-b0-ry9"/>
+                                </connections>
                             </slider>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="XDD-Ss-Kmo">
                                 <rect key="frame" x="120" y="329" width="249" height="31"/>
@@ -56,12 +59,18 @@
                                     <constraint firstAttribute="height" constant="30" id="9Oz-du-hId"/>
                                     <constraint firstAttribute="width" constant="245" id="FIi-JL-oX4"/>
                                 </constraints>
+                                <connections>
+                                    <action selector="greenSliderAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="aWk-Lz-tbc"/>
+                                </connections>
                             </slider>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="cNC-k8-9Ou">
                                 <rect key="frame" x="120" y="379" width="249" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="hDD-bb-kbh"/>
                                 </constraints>
+                                <connections>
+                                    <action selector="blueSliderAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="ybw-2F-qz4"/>
+                                </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Blue:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uRd-IX-L5O">
                                 <rect key="frame" x="25" y="381" width="42" height="30"/>
@@ -100,6 +109,15 @@
                             <constraint firstItem="XiK-vL-Vlq" firstAttribute="leading" secondItem="Msf-IO-3QI" secondAttribute="leading" constant="25" id="xeg-xu-IhO"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="blueLabel" destination="uRd-IX-L5O" id="ZGJ-x9-CaE"/>
+                        <outlet property="blueSlider" destination="cNC-k8-9Ou" id="AlX-VC-koD"/>
+                        <outlet property="greenLabel" destination="XiK-vL-Vlq" id="dMP-DL-vrA"/>
+                        <outlet property="greenSlider" destination="cNC-k8-9Ou" id="UDe-LI-ebr"/>
+                        <outlet property="mainView" destination="weL-SW-fBN" id="h8m-af-e7u"/>
+                        <outlet property="redLabel" destination="8om-pX-2fv" id="O78-hN-M2f"/>
+                        <outlet property="redSlider" destination="bhT-rE-DDc" id="hO1-IC-d3s"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
